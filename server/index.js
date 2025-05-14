@@ -16,13 +16,14 @@ connectDB();
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+const viteURL = process.env.FRONTEND;
 
 // default middleware
 app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin:"https://lms-qscalz17s-k9ams-projects.vercel.app",
+    origin:`${viteURL}`,
     credentials:true
 }));
  

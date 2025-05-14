@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin:`${viteURL}`,
+    origin:${viteURL},
     credentials:true
 }));
  
